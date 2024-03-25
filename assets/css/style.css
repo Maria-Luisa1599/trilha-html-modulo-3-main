@@ -76,7 +76,7 @@ main {
     overflow-y: auto;
     max-height: calc(100vh - 200px);
     border-right: solid 1px #cdcdcd; 
-    padding-right: 100px;
+    padding-right: 100px
 
 }
 
