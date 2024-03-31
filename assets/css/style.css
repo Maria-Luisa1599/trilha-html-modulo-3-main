@@ -3,8 +3,6 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
 .bar {
@@ -13,29 +11,48 @@ a { color:blue; text-decoration: none;}
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
-menu {
-    max-width: 1440px;
+
+main {
+    max-width: 1600px;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
-    gap: 3rem;
+    gap: 0.2rem;
     grid-template-areas: "sidebar main anchors";
     grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
     padding-left: 1rem;
-    padding-right: 1rem;   
+    padding-right: 1rem;  
 }
-footer {
+
+.main{
+    overflow-y: auto;
+    max-height: calc(100vh - 0px);
+    margin-right: 0;
+
+}
+
+.footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
 }
+
 aside {
     padding-right: 10px;
     font-size: 25px;
 }
 
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
 .sidebar {
     border-right: solid 1px #cdcdcd;
+    padding-left: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
+
 figure {
     text-align: center;
 }
@@ -69,17 +86,17 @@ aside li:hover{
     border-radius: 5px;
     padding: 5px;
 }
-main {
+menu {
     font-size: 20px;
     grid-template-areas: "profile timeline";
     grid-template-columns: 1fr 1fr;
-    overflow-y: auto;
-    max-height: calc(100vh - 200px);
-    border-right: solid 1px #cdcdcd; 
-    padding-right: 100px
+    padding-right: 10px;
 
 }
 
+figure {
+    text-align: center;
+}
 figure img{
     float: right;
     margin: 40px;
@@ -90,6 +107,10 @@ figure img:hover{
     transform: scale(1.1);
 }
 
-
-
+.div-main{
+    overflow-y: auto;
+    max-height: calc(100vh - 0px);
+    margin-right: 0;
+    border-right: solid 1px #cdcdcd;
+}
 
