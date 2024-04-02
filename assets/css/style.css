@@ -13,7 +13,7 @@ a { color:blue; text-decoration: none;}
 }
 
 main {
-    max-width: 1600px;
+    max-width: 1500px;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
@@ -24,19 +24,27 @@ main {
     padding-right: 1rem;  
 }
 
-.main{
-    overflow-y: auto;
-    max-height: calc(100vh - 0px);
-    margin-right: 0;
-
-}
-
 .footer {
+    display: flex;
+    flex-direction: column;
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    padding-left: 10px;
+    
+}
+.footer h2, h3, .h4{
+    height: 15px;
+}
+.h4{
+    display: flex;
 }
 
-aside {
+.h4 h4{
+    margin: 5px;
+}
+
+aside { 
+    width: 400px;
     padding-right: 10px;
     font-size: 25px;
 }
@@ -95,11 +103,13 @@ menu {
 }
 
 figure {
-    text-align: center;
-}
+float: right;
+} 
+
 figure img{
     float: right;
-    margin: 40px;
+
+    margin-bottom: 0;
     border-radius: 10px;
 }
 
