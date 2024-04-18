@@ -14,12 +14,13 @@ a { color:blue; text-decoration: none;}
 
 main {
     max-width: 1500px;
+    height: 700px;
     margin: auto;
     grid-gap: 3rem;
     display: grid;
     gap: 0.2rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(1rem);
     padding-left: 1rem;
     padding-right: 1rem;  
 }
@@ -61,6 +62,17 @@ aside {
     margin-top: 0;
 }
 
+.sidebar h2{
+    font-size: 30px;
+    margin-left: -80px;
+}
+
+.sidebar li{
+    font-size: 20px;
+    margin-left: -80px;
+
+}
+
 figure {
     text-align: center;
 }
@@ -70,8 +82,21 @@ figure {
     align-items: center;
 }
 
+table{
+    margin-top: 90px;
+}
+
+td{
+    text-align: center;
+    background-color: #f7f6f6e8;
+}
+
+th{
+    background-color: #ededede3;
+}
+
 .nome {
-    margin-left: 450px;
+    margin-left: 380px;
     padding: 30px;
     padding-left: 300px;
     padding-right: 300px;
